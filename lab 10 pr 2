@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+void swapNums(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 50, y = 100;
+    swapNums(&x, &y);
+    cout << "a=" << x << ", b=" << y << endl;
+    return 0;
+}
